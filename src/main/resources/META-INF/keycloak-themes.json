@@ -1,0 +1,6 @@
+{
+    "themes": [{
+        "name" : "chilecompra",
+        "types": [ "login"]
+    }]
+}
