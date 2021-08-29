@@ -7,6 +7,17 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="noindex, nofollow">
 
+    <script src="${url.resourcesPath}/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/modernizr.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/script.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/jquery.ValidaFormatCampo.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/Rut.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/Autenticacion/Login.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/Autenticacion/loginClaveUnica.js" type="text/javascript"></script>
+    <script src="${url.resourcesPath}/js/RecuperacionContrasena/jquery.dataTables.min.js" type="text/javascript"></script>
+
     <#if properties.meta?has_content>
         <#list properties.meta?split(' ') as meta>
             <meta name="${meta?split('==')[0]}" content="${meta?split('==')[1]}"/>
