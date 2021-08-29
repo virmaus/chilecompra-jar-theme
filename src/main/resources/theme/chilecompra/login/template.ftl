@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" class="${properties.kcHtmlClass!}">
 
-<head>
+<head class="container no-print" role="banner" id="encabezado">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="noindex, nofollow">
@@ -17,6 +17,14 @@
     <script src="${url.resourcesPath}/js/Autenticacion/Login.js" type="text/javascript"></script>
     <script src="${url.resourcesPath}/js/Autenticacion/loginClaveUnica.js" type="text/javascript"></script>
     <script src="${url.resourcesPath}/js/RecuperacionContrasena/jquery.dataTables.min.js" type="text/javascript"></script>
+
+    <style>
+    img.btn-clave-unica {
+        position: relative !important;
+        width: 160px !important;
+        left: calc( 50% - 80px );
+    }
+    </style>
 
     <#if properties.meta?has_content>
         <#list properties.meta?split(' ') as meta>
@@ -40,6 +48,28 @@
             <script src="${script}" type="text/javascript"></script>
         </#list>
     </#if>
+    <div id="ccBarraOpciones">
+            <nav id="ccBarra" class="menu-transversal ohidden">
+                <div class="row">
+                    <ul>
+                        <li class="active"><a href="http://www.chilecompra.cl/" id="idChComp" target="_blank" class="">ChileCompra</a></li>
+                        <li class="">
+                            <a href="http://www.mercadopublico.cl/" id="idHome" target="_top" class="paraguasSelected">Mercado Público</a>
+                        </li><li class=""><a href="http://capacitacion.chilecompra.cl/" id="idFormacion" target="_blank" class="">Capacitación</a></li><li class="">
+                            <a href="https://ayuda.mercadopublico.cl/" id="idServ" target="_blank" class="">Centro de Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        <nav class="row" id="encabezado">
+            <div class="col-md-3">
+                <a href="http://www.mercadopublico.cl/Home/" class="logo header" target="_self">
+                <img src="${url.resourcesPath}/img/logo-chilecompra-original.png" alt="Imagen de logotipo de Mercado Público">
+                </a> 
+            </div>
+        </nav>
+    </div>
 </head>
 
 <body class="${properties.kcBodyClass!}">
@@ -153,6 +183,24 @@
 
     </div>
   </div>
+    <div id="ccFooterPublico" class="cc-footer-publico footer-simple padding-md">
+     <div class="container">
+        <div class="row">
+            <div class="col-sm-6 logotipo-negativo text-center">
+            <img src="${url.resourcesPath}/img/indice.png">
+            </div>
+            <div class="col-sm-6 text-left">
+                <ul class="list-unstyled">
+                    <li>Dirección ChileCompra</li>
+                    <li>Ministerio de Hacienda, Gobierno de Chile</li>
+                    <li>Monjitas 392 - Piso 8, Santiago de Chile (7N)</li>
+                    <li>Mesa de ayuda: 600 7000 600 – +56 44 220 1003</li>  
+                    <li><a href="http://www.chilecompra.cl/terminos-y-condiciones-de-uso/">Términos y condiciones</a></li>
+                </ul>
+            </div>
+      </div>
+     </div>
+    </div>
 </body>
 </html>
 </#macro>
