@@ -183,6 +183,7 @@
 
     </div>
   </div>
+  
     <div id="ccFooterPublico" class="cc-footer-publico footer-simple padding-md">
      <div class="container">
         <div class="row">
@@ -198,9 +199,10 @@
                     <li><a href="http://www.chilecompra.cl/terminos-y-condiciones-de-uso/">Términos y condiciones</a></li>
                 </ul>
             </div>
-      </div>
+        </div>
      </div>
     </div>
+
 </body>
 </html>
 </#macro>
